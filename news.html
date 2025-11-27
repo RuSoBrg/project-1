@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News — Hearth & Co.</title>
+  <div id="site-wrap">
+    <header class="site-header">
+      <div class="brand"><h1>Hearth &amp; Co.</h1></div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown"><a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>News</h2>
+      <article>
+        <h3>Local Magazine Feature</h3>
+        <p>Hearth &amp; Co. featured in Local Maker magazine for our low-waste packaging initiative.</p>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Hearth &amp; Co.</p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
