@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hearth & Co. — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="site-wrap">
+    <header class="site-header">
+      <div class="brand">
+        <h1>Hearth &amp; Co.</h1>
+        <p class="tag">Handmade goods for conscious living</p>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="images/hero.png" alt="Hearth & Co. display table" />
+        <div class="hero-text">
+          <h2>Small batch. Big heart.</h2>
+          <p>Handcrafted home goods and artisan treats made locally with sustainable practices.
+          We create products that feel like home.</p>
+          <a class="cta" href="store.html">Visit the Store</a>
+        </div>
+      </section>
+
+      <section class="intro">
+        <h3>What we do</h3>
+        <p>Hearth &amp; Co. makes handcrafted candles, ceramics, and seasonal baked goods — combining
+        traditional techniques with modern design. Our mission is to make sustainable everyday items
+        that bring warmth to simple moments.</p>
+      </section>
+
+      <section class="features">
+        <article>
+          <h4>Locally Crafted</h4>
+          <p>All our items are produced in small batches by local artisans using ethically sourced materials.</p>
+        </article>
+        <article>
+          <h4>Workshops & Events</h4>
+          <p>Learn a skill at our monthly workshops. See upcoming events on the Events page.</p>
+        </article>
+        <article>
+          <h4>Photo Gallery</h4>
+          <p>Browse our process and products in the gallery. We document everything with original photography.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Hearth &amp; Co.</p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
