@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photo Gallery — Hearth & Co.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="site-wrap">
+    <header class="site-header">
+      <div class="brand"><h1>Hearth &amp; Co.</h1></div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown"><a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Photo Gallery</h2>
+      <p>Beautiful and sustainable</p>
+
+      <div class="gallery">
+        <figure><img src="images/candles.png" alt="Product shot 1"><figcaption>Hand-poured candles</figcaption></figure>
+        <figure><img src="images/bowls.png" alt="Product shot 2"><figcaption>Ceramic bowls</figcaption></figure>
+        <figure><img src="images/pastries.png" alt="Product shot 3"><figcaption>Seasonal pastries</figcaption></figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Hearth &amp; Co.</p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
