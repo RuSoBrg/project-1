@@ -1,0 +1,63 @@
+/* Basic reset */
+*{box-sizing:border-box}
+body{font-family: 'Montserrat', Arial, sans-serif;margin:0;background:#f7f6f4;color:#222}
+#site-wrap{width:960px;margin:20px auto;background:#fff;padding:20px}
+.site-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e5e5;padding-bottom:12px}
+.brand h1{margin:0;font-weight:700}
+.brand .tag{font-size:14px;margin:4px 0 0;color:#666}
+
+
+/* Navigation */
+.main-nav .menu{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.main-nav .menu li{position:relative}
+.main-nav a{color:#222;text-decoration:none;padding:6px 4px;display:inline-block}
+.has-dropdown:hover > .dropdown{display:block}
+.dropdown{display:none;position:absolute;left:0;top:28px;background:#fff;border:1px solid #ddd;min-width:160px;list-style:none;padding:8px 0}
+.dropdown li{padding:0}
+.dropdown a{display:block;padding:8px 12px}
+
+
+/* Hero */
+.hero{display:flex;gap:20px;align-items:center;margin:18px 0}
+.hero img{width:320px;height:200px;object-fit:cover;border-radius:6px;display:block;margin:0 auto}
+.hero-text h2{margin:0 0 8px}
+.cta{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:4px;background:#222;color:#fff;text-decoration:none}
+
+
+/* Layout */
+.content{padding:10px 0}
+.features{display:flex;gap:18px;margin-top:12px}
+.features article{flex:1;background:#fafafa;padding:12px;border-radius:6px}
+
+
+/* Gallery */
+.gallery{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.gallery figure{margin:0;padding:0}
+.gallery img{width:300px;height:180px;object-fit:cover;border-radius:6px;display:block;margin:0 auto}
+.gallery figcaption{text-align:center;margin-top:6px;color:#666}
+
+
+/* Products */
+.products{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.product{width:220px;text-align:center}
+.product img{width:180px;height:120px;object-fit:cover;border-radius:6px;display:block;margin:0 auto}
+
+
+/* Make images inside figures and other img tags centered by default */
+figure img, img {display:block;margin-left:auto;margin-right:auto}
+
+
+/* Contact form */
+.contact-form{display:flex;flex-direction:column;gap:10px;max-width:640px}
+.contact-form label{font-weight:500}
+.contact-form .req{color:red}
+.yourclass{padding:8px;border:1px solid #ccc;border-radius:4px}
+button[type="submit"]{padding:10px 14px;border:none;border-radius:6px;background:#222;color:#fff;cursor:pointer}
+.note{font-size:13px;color:#666}
+
+/* Footer */
+footer{border-top:1px solid #eee;padding-top:12px;margin-top:18px;text-align:center;color:#666}
+
+
+/* Fixed width stays at 960px */
+@media (max-width:980px){body{background:#fff}#site-wrap{width:100%;padding:12px}}
