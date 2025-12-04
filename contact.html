@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Hearth & Co.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="site-wrap">
+    <header class="site-header">
+      <div class="brand"><h1>Hearth &amp; Co.</h1></div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown"><a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Contact Us</h2>
+      <p>Use the form below to send us a message.</p>
+
+      <form class="contact-form" method="post" action="https://hnitest.go.yj.fr">
+        <label for="lastname">Last name <span class="req">*</span></label>
+        <input class="yourclass" id="lastname" type="text" name="lastname" required />
+
+        <label for="firstname">First name <span class="req">*</span></label>
+        <input class="yourclass" id="firstname" type="text" name="firstname" required />
+
+        <label for="mail">Email <span class="req">*</span></label>
+        <input class="yourclass" id="mail" type="email" name="mail" placeholder="yourmail@yahoo.com" required />
+
+        <label for="request">Message <span class="req">*</span></label>
+        <textarea class="yourclass" name="request" id="request" cols="66" rows="10" required></textarea>
+
+        <label for="country">Country <span class="req">*</span></label>
+        <select class="yourclass" name="country" id="country" required>
+          <option value="">Select a country</option>
+          <option value="PT">Portugal</option>
+          <option value="FR">France</option>
+          <option value="US">United States</option>
+        </select>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Hearth &amp; Co.</p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
